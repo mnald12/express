@@ -1,0 +1,12 @@
+
+<div class="lists">
+	<% datas.forEach(function(item){ %>
+	<div class="list">
+		<h3><%=item.name%></h3>
+		<img src="<%=item.img%>">
+		<p><%=item.disc%></p>
+		<a href="/<%=item.id%>">view</a>
+	</div>
+	<% }) %>
+	<%- include(`add`) %>
+</div>
